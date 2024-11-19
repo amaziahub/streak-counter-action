@@ -1,0 +1,23 @@
+name: "Streak Counter"
+description: "Track and display commit streaks for contributors and notify them."
+author: "Your Name or Org"
+inputs:
+  github-token:
+    description: "GitHub token to access the API"
+    required: true
+  username:
+    description: "GitHub username to track streaks for"
+    required: true
+outputs:
+  daily-streak:
+    description: "Current daily streak"
+  weekly-streak:
+    description: "Current weekly streak"
+  longest-streak:
+    description: "Longest streak ever"
+runs:
+  using: "docker" # Or "composite" for a non-Docker action
+  image: "Dockerfile" # Specify the Dockerfile for your action
+branding:
+  icon: "zap" # Choose an icon from GitHub's icon library
+  color: "blue" # Choose a color for the Marketplace
