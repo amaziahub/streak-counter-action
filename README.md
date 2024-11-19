@@ -1,7 +1,5 @@
 # streak-counter-action
 
-# Streak Counter
-
 Track and display commit streaks for contributors and notify them!
 
 ## Inputs
